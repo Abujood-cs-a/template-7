@@ -1,0 +1,228 @@
+/* Start variable */
+/* End variable */
+/* Start Globale Rule */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background-color: #001;
+}
+
+/* End Globale Rule */
+.container {
+    display: flex;
+}
+
+.container .menua {
+    width: 100px;
+    height: 100vh;
+    background-color: #123;
+    padding: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    overflow: hidden;
+}
+.container .menua:hover {
+    width: 400px;
+}
+
+.container .menua .profile {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .menua .profile h2 {
+    font-size: 22px;
+}
+
+.container .menua .profile .image-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    border: solid 3px white;
+    overflow: hidden;
+    flex-shrink: 0;
+
+}
+
+.container .menua .profile .image-box img {
+    width: 100%;
+}
+
+.container .menua ul {
+    list-style: none;
+    position: relative;
+    height: 95vh;
+}
+
+.container .menua ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-size: 18px;
+}
+
+.container .menua ul li a:hover,
+.active,
+.content .container .box:hover,
+td:hover {
+    background-color: #ffffff55;
+}
+
+.container .menua ul li a i {
+    font-size: 30px;
+}
+@media (max-width:991px) {
+    .container .menua { 
+        height: 145vh !important;
+    }
+}
+@media (max-width: 991px) {
+    .container .menua ul li a i {
+        font-size: 24px;
+    }
+   
+}
+
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .log-out { 
+        bottom: -150px;
+    }
+}
+
+.log-out a {
+    background-color: red;
+}
+
+
+.content {
+    width: 100%;
+    margin: 10px;
+}
+
+.content .title-info {
+    background-color: #0481ff;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 10px 0;
+}
+
+.content .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.content .container .box {
+    display: flex;
+    align-items: center;
+    flex-basis: 150px;
+    height: 140px;
+    flex-grow: 1;
+    justify-content: space-around;
+    background-color: #123;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.content .container .box i {
+    font-size: 40px;
+}
+
+.content .container .box p {
+    text-align: center;
+}
+
+.content .container .box span {
+    font-size: 30px;
+}
+table { 
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+td, th {
+    background-color: #123;
+    height: 40px;
+    border-radius:8px ;
+    -webkit-border-radius:8px ;
+    -moz-border-radius:8px ;
+    -ms-border-radius:8px ;
+    -o-border-radius:8px ;
+}
+th { 
+    background-color: #0481ff;
+}
+.price,
+.count {
+    padding: 6px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.price { 
+    background-color: green
+}
+
+.count { 
+    background-color:gold;
+    color: black;
+}
